@@ -1,0 +1,153 @@
+.products {
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    margin: 0 auto;
+    &-content {
+        position: relative;
+        width: 50%;
+        height: 80vh;
+        padding: 2rem 0;
+        &-heading {
+            font-size: 5rem;
+            margin: 1rem 0;
+            font-family: "Dancing Script", cursive;
+        }
+        &-title {
+            font-size: 4rem;
+            margin: 1rem 0;
+            color: var(--bg-color);
+        }
+        &-para {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--bg-color);
+        }
+        &-btn {
+            // font-size: 1.5rem;
+            margin: 3rem 0;
+            position: absolute;
+        }
+    }
+    &-cards {
+        position: relative;
+        margin-top: 3rem;
+        height: 70vh;
+        &-box {
+            // position: absolute;
+            width: 30%;
+            // top: 20rem;
+        }
+        &-img {
+            border-radius: 1.4rem;
+            transform: scale(1);
+            transition: all 0.3s ease-in-out;
+            opacity: 0.8;
+            &:hover {
+                overflow: hidden;
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+        &-title {
+            font-size: 3rem;
+            margin: 2rem 0;
+            color: var(--bg-color);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        &-price {
+            font-size: 2.3rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+    }
+}
+.cards_box_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cards_box_2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cards_box_3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bg__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    overflow: hidden;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 786px) {
+    .products {
+        // height: 180vh;
+        &-content {
+            &-para {
+                font-size: 1.8rem;
+                letter-spacing: 0.7px;
+            }
+        }
+        &-cards-title {
+            margin: 1rem 0;
+        }
+    }
+    .cards_box_2 {
+        position: relative;
+        top: -90%;
+        left: 55%;
+        transform: translateX(0);
+    }
+}
+@media (max-width: 480px) {
+    .products {
+        height:270vh;
+        &-content {
+            width: 80%;
+            position: relative;
+        }
+        &-cards-price {
+           margin-bottom: 2.5rem;
+        }
+    }
+    .cards_box_1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cards_box_2 {
+        position: relative;
+        top: 0;
+        left: 0%;
+        transform: translateX(0%);
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cards_box_3 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}

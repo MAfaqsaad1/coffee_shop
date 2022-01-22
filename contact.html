@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Cafe | Shop fitness to your world</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montagu+Slab:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.css">
+
+</head>
+
+<body>
+    <header class="header" style="  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)) , url(./img/service.jfif); height: 70vh; background-position: bottom;">
+
+          <h3 class="header__logo">Coffee_</h3>
+
+        <nav class="header__nav" id="navigation">
+            <i class="fas fa-times header__nav--icon" id="close"></i>
+            <ul class="header__nav--menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./skilles.html">Skills</a></li>
+                <li><a href="./Products.html">Products</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="color__switcher">
+                <input type="checkbox" id="toggle" name="theme">
+            </div>
+
+        </nav>
+        <i class="fas fa-bars header__icon" id="hamburger"></i>
+        <div class="header__content">
+            <!-- <h2>Mind opening tea, not Today, <br> Everyday</h2>
+            <h1>Specially <br> Crafted Tea</h1>
+            <button class="btn header__content--btn">Explore</button> -->
+            <h1 class="main__page_heading">Contact Us_</h1>
+        </div>
+    </header>
+
+
+    <section class="contact">
+        <div class="row">
+            <div class="col-left">
+                <div class="content">
+                    <i class="fas fa-map-marked-alt  icon"></i>
+                    <h2>Address</h2>
+                    <p>
+                        house no 40 lahore,Pakistan
+                    </p>
+                </div>
+                <div class="content">
+                    <i class="fas fa-mail-bulk  icon"></i>
+                    <h2>Email</h2>
+                    <p>
+                        Mafaqsaad100@gmail.com
+                    </p>
+                </div>
+                <div class="content">
+                    <i class="fas fa-phone icon"></i>
+                    <h2>Phone</h2>
+                    <p>
+                        +92 308 488 6911
+                    </p>
+                </div>
+            </div>
+            <div class="col-right">
+                <form action="#">
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <div class="input">
+                        <label for="name">Message</label>
+                        <textarea placeholder="Massage"></textarea>
+                    </div>
+
+                </form>
+                <button class="btn">send</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <h2>&copy; All Right Reserved. <span>M.AFAQ</span></h2>
+    </footer>
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/darkMode.js"></script>
+</body>
+
+</html>
