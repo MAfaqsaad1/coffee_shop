@@ -49,9 +49,19 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montagu Slab', serif;
   background: var(--color-primary-m);
   color: var(--color-primary);
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: 0.6px;
 }
 
 li {
@@ -164,7 +174,7 @@ a {
 
 .header__nav .color__switcher {
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -248,11 +258,13 @@ a {
   line-height: 1.6;
   -webkit-animation: topIn 2s forwards;
           animation: topIn 2s forwards;
+  font-weight: 700;
 }
 
 .header__content h1 {
   color: white;
   text-align: center;
+  font-weight: 450;
   font-size: 7rem;
   margin-top: 3rem;
   letter-spacing: 0.8rem;
@@ -260,6 +272,7 @@ a {
   line-height: 1.2;
   -webkit-animation: leftIn 2.5s forwards;
           animation: leftIn 2.5s forwards;
+  font-family: auto;
 }
 
 .header__content--btn {
@@ -277,7 +290,7 @@ a {
 }
 
 .main__page_heading {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive !important;
 }
 
 @-webkit-keyframes topIn {
@@ -380,14 +393,30 @@ a {
 
 @media (max-width: 786px) {
   .header h1 {
-    font-size: 4rem;
+    font-size: 4.4rem;
   }
   .header__nav {
     width: 100%;
   }
+  .header__nav--menu {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+  }
   .color__switcher {
-    left: 100rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
+  .header__content--btn {
+    padding: 1rem 2.3rem;
   }
 }
 
@@ -722,6 +751,12 @@ a {
 }
 
 @media (max-width: 786px) {
+  .products {
+    height: 170vh;
+  }
+  .products-content {
+    margin-bottom: 5rem;
+  }
   .products-content-para {
     font-size: 1.8rem;
     letter-spacing: 0.7px;
@@ -731,16 +766,17 @@ a {
   }
   .cards_box_2 {
     position: relative;
-    top: -90%;
+    top: -108%;
     left: 55%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    width: 5rem;
   }
 }
 
 @media (max-width: 480px) {
   .products {
-    height: 270vh;
+    height: 280vh;
   }
   .products-content {
     width: 80%;
@@ -776,7 +812,7 @@ a {
 
 .services {
   position: relative;
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   text-align: center;
   padding: 4rem 0;

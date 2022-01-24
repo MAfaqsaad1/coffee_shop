@@ -98,8 +98,9 @@
 }
 @media (max-width: 786px) {
     .products {
-        // height: 180vh;
+        height: 170vh;
         &-content {
+            margin-bottom: 5rem;
             &-para {
                 font-size: 1.8rem;
                 letter-spacing: 0.7px;
@@ -108,23 +109,31 @@
         &-cards-title {
             margin: 1rem 0;
         }
+        // &-cards {
+        //     margin-top: 10rem !important;
+        // }
     }
     .cards_box_2 {
         position: relative;
-        top: -90%;
+        top: -108%;
         left: 55%;
         transform: translateX(0);
+        width: 5rem;
     }
 }
 @media (max-width: 480px) {
     .products {
-        height:270vh;
+        height: 280vh;
         &-content {
             width: 80%;
             position: relative;
+            // margin-bottom: 10rem !important;
+            // &-btn {
+            //     display: none;
+            // }
         }
         &-cards-price {
-           margin-bottom: 2.5rem;
+            margin-bottom: 2.5rem;
         }
     }
     .cards_box_1 {
@@ -149,5 +158,4 @@
         width: 80%;
         margin: 0 auto;
     }
-    
 }

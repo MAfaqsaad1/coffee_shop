@@ -1,10 +1,12 @@
 .services {
     position: relative;
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     text-align: center;
     padding: 4rem 0;
     background-color: var(--color-primary-l);
+    // padding-bottom: 4rem;
+    // margin-bottom: 4rem;
     &-content {
         // position: absolute;
         // text-align: center;
