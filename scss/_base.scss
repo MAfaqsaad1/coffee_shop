@@ -33,14 +33,19 @@ a {
     text-decoration: none;
     color: var(--bg-color);
 }
+p {
+    opacity: 0.9;
+    line-height: 1.2;
+    font-weight: 400;
+}
 
 .btn {
     border: none;
-    padding: 2rem 4rem;
+    padding: 1.5rem 3rem;
     background: var(--color-primary);
     font-size: 1.8rem;
     letter-spacing: 0.5rem;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     outline: 2px solid var(--color-primary);
     outline-offset: 0.6rem;
     cursor: pointer;

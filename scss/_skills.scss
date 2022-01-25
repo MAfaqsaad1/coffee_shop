@@ -18,14 +18,23 @@
             i {
                 color: white;
             }
+            p {
+                color: white;
+                
+            }
         }
         & i {
-            font-size: 8rem;
+            font-size: 5rem;
             position: absolute;
-            top: 2rem;
+            top: 3rem;
             left: 50%;
             transform: translateX(-50%);
             color: var(--color-primary);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+
+                transform:translate(-50%, -1rem);
+            }
         }
         &_title {
             font-size: 2rem;
@@ -37,14 +46,17 @@
             transform: translateX(-50%);
         }
         &_para {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             position: absolute;
             top: 60%;
             width: 60%;
             left: 50%;
             transform: translateX(-50%);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             color: black;
+            line-height: 1.2;
+            opacity: 0.9;
+            font-weight: 350;
         }
     }
 }

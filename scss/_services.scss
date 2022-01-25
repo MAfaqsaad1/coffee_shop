@@ -1,6 +1,6 @@
 .services {
     position: relative;
-    height: 120vh;
+    height: 130vh;
     width: 100%;
     text-align: center;
     padding: 4rem 0;
@@ -28,27 +28,37 @@
         padding: 3px;
         padding-bottom: 4rem;
         background-color: var(--color-primary);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
         &:hover {
             box-shadow: 1rem 0.8rem 1rem var(--bg-color);
+            i {
+                transform: translate(-50%, -70%);
+
+            }
         }
         & img {
             border-radius: 1rem;
+            transition: all 0.3s ease-in-out;
             // position: absolute;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         & i {
             position: absolute;
             // margin-top: -2rem;
             display: inline-block;
-            font-size: 3rem;
+            font-size: 2.3rem;
             background-color: var(--color-primary);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 1rem;
+            padding: 1.5rem;
             color: white;
             border-radius: 100%;
-            box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
+            box-shadow: 0.1rem 0.1rem 0.3rem var(--bg-color);
+
         }
         &-title {
             font-size: 2rem;
@@ -93,22 +103,53 @@
     position: absolute;
     right: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .services {
         height: 230vh;
     }
+    
+    .card-1 {
+        position: absolute;
+        left: 10%;
+    }
+    .card-3 {
+        position: absolute;
+        right: 10%;
+    }
+    
     .card-2 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        width: 45%;
+        width: 30%;
         margin: 0 auto;
         top: 47rem;
+    }
+}
+@media (max-width: 768px) {
+    
+    .card-1 {
+        position: absolute;
+        left: 0%;
+    }
+    .card-3 {
+        position: absolute;
+        right: 0%;
+    }
+    .card-2 {
+        width: 44%;
     }
 }
 @media (max-width: 480px) {
     .services {
         height: auto;
+    }
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 66%;
+        margin: 0 auto;
+
     }
     .card-1 {
         position: relative;
@@ -119,10 +160,13 @@
         left: 0%;
         transform: translateX(0%);
         top: 2.5rem;
-        width: 100%;
+        // width: 100%;
+        // bottom: 2.5rem;
+        margin-bottom: 5.5rem;
     }
     .card-3 {
         position: relative;
+        // top: 2.5rem;
         left: 0;
     }
     

@@ -1,13 +1,15 @@
 .products {
     position: relative;
-    height: 150vh;
+    height: 140vh;
     width: 100%;
     margin: 0 auto;
     &-content {
         position: relative;
-        width: 50%;
-        height: 80vh;
+        width: 80%;
+        text-align: center;
+        height: 70vh;
         padding: 2rem 0;
+        margin: 0 auto;
         &-heading {
             font-size: 5rem;
             margin: 1rem 0;
@@ -19,21 +21,20 @@
             color: var(--bg-color);
         }
         &-para {
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             margin: 1rem 0;
             font-style: italic;
             color: var(--bg-color);
+            margin-bottom: 5.5rem;
         }
-        &-btn {
-            // font-size: 1.5rem;
-            margin: 3rem 0;
-            position: absolute;
-        }
+     
     }
     &-cards {
         position: relative;
-        margin-top: 3rem;
+        // margin-top: 3rem;
         height: 70vh;
+        text-align: center;
+        width: 100%;
         &-box {
             // position: absolute;
             width: 30%;
@@ -52,7 +53,7 @@
         }
         &-title {
             font-size: 3rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
             color: var(--bg-color);
             font-weight: 300;
             letter-spacing: 1px;
@@ -71,9 +72,10 @@
 }
 .cards_box_2 {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    // top: 50%;
+    left: 49%;
+    
+    transform: translate(-50%, 0%);
 }
 .cards_box_3 {
     position: absolute;
@@ -96,9 +98,9 @@
         object-fit: cover;
     }
 }
-@media (max-width: 786px) {
+@media (max-width: 1024px) {
     .products {
-        height: 170vh;
+        height: 150vh;
         &-content {
             margin-bottom: 5rem;
             &-para {
@@ -113,13 +115,26 @@
         //     margin-top: 10rem !important;
         // }
     }
-    .cards_box_2 {
-        position: relative;
-        top: -108%;
-        left: 55%;
-        transform: translateX(0);
-        width: 5rem;
+    .row {
+        width: 90% !important;
     }
+    // .cards_box_2 {
+    //     // position: relative;
+    //     // top: -108%;
+    //     left: 40%;
+    //     transform: translateX(-50%);
+    //     width: 5rem;
+    // }
+ 
+}
+@media (max-width: 786px) {
+    .cards_box_2 {
+        display: none;
+    }
+    .row {
+        width: 80% !important;
+    }
+
 }
 @media (max-width: 480px) {
     .products {
@@ -150,6 +165,7 @@
         transform: translateX(0%);
         width: 80%;
         margin: 0 auto;
+        display: block;
     }
     .cards_box_3 {
         position: relative;
