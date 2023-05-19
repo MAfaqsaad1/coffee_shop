@@ -634,7 +634,7 @@ img {
 
 @media (max-width: 480px) {
   .about {
-    height: 140vh;
+    height: 100vh;
     padding: 4rem 0;
   }
   .about_img {
@@ -645,7 +645,7 @@ img {
             transform: translate(0, 0);
     width: 80%;
     margin: 0 auto;
-    height: 37%;
+    height: auto;
   }
   .about_content {
     position: relative;
@@ -656,6 +656,8 @@ img {
     width: 80%;
     margin: 0 auto;
   }
+  about_content-btn {
+     display: none;
 }
 
 .products {
